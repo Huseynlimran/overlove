@@ -1,0 +1,103 @@
+.project {
+  .project_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .project_headerTitle {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 90px;
+      color: #373737;
+    }
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      color: #707070;
+      width: 824px;
+      padding-top: 24px;
+    }
+    .project_btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #ffd703;
+      border: 2px solid #ffd703;
+      padding: 14px 52px;
+      border-radius: 2000px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 33px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      color: #2c2c2c;
+      &:hover {
+        background: rgba(255, 255, 255, 0.8);
+        mix-blend-mode: normal;
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+    }
+  }
+  .project_dev {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    @media(max-width: $breakpoint1200){
+        flex-wrap: wrap;
+        flex: 1 0 25%;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media(max-width: $breakpoint1200){
+          flex: 0 0 30%;
+        }
+        @media(max-width: $breakpoint768){
+          flex: 1 0 100%;
+        }
+
+    }
+    .dev_title {
+      background: rgba(255, 255, 255, 0.575);
+      backdrop-filter: blur(13px);
+      border-radius: 30px;
+      transform: translateY(-60px);
+      padding: 16px 33px;
+      width: 272px;
+      max-width: 100%;
+      h3 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #373737;
+      }
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3fc2bb;
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+      }
+    }
+  }
+}

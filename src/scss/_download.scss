@@ -1,0 +1,96 @@
+.download {
+  background-image: url("../img/bg\ top.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 150px;
+
+  .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 155px 0px;
+    
+
+    h1 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 106px;
+      line-height: 130%;
+      text-align: center;
+      color: #ffffff;
+      @media(max-width: $breakpoint768){
+        font-size: 72px;
+        flex: 1 0 100%;
+      }
+      @media(max-width: $breakpoint480){
+        font-size: 46px;
+      }
+    }
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.1px;
+      color: #ffffff;
+      margin: 16px 0 32px 0;
+      max-width: 610px;
+      @media(max-width: $breakpoint768){
+        font-size: 14px;
+        flex: 1 0 100%;
+      }
+    }
+    .input {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @media(max-width: $breakpoint480){
+        flex-wrap: wrap;
+
+      }
+      input {
+        @media(max-width: $breakpoint480){
+          flex: 1 1 90%;
+          
+        }
+        padding: 13px 34px;
+        background: #ffffff;
+        border: 1px solid #cafffd;
+        border-radius: 2000px;
+        outline: none;
+        width: 312px;
+        &::placeholder{
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #cccccc;
+        }
+      }
+      button {
+        @media(max-width: $breakpoint480){
+          flex: 1 1 90%;
+          
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 12px 40px;
+        background: #ffd703;
+        border-radius: 1000px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          box-shadow: 0 0 10px white;
+        }
+      }
+    }
+  }
+}

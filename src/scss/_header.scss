@@ -1,0 +1,20 @@
+.header{
+    width: 100vw;
+    height: 205vh;
+    background-image: url("../img/bg\ top.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media(max-width: $breakpoint992){
+        height: 220vh;
+    }
+    @media(max-width: $breakpoint768){
+        height: 280vh;
+    }
+    @media(max-width: 574px){
+        height: 320vh;
+    }
+    @media(max-width: 400px){
+        height: 360vh;
+    }
+}

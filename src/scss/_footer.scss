@@ -1,0 +1,125 @@
+footer {
+  background: #0b514d;
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $breakpoint1200) {
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+    padding: 40px 0px;
+  }
+
+  .box {
+    @media (max-width: $breakpoint1200) {
+      flex: 1 0 30%;
+    }
+    h6 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #f4f4f4;
+      margin-bottom: 16px;
+    }
+    ul {
+      li {
+        margin: 8px 0;
+        a {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: 0.75px;
+          text-transform: uppercase;
+          color: #38b7af;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+    h5 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      color: #cefffd;
+    }
+    .input {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @media (max-width: $breakpoint768) {
+        flex-wrap: wrap;
+      }
+
+      input {
+        padding: 13px 34px;
+        background: #ffffff;
+        border: 1px solid #cafffd;
+        border-radius: 2000px;
+        outline: none;
+        width: 312px;
+        @media (max-width: $breakpoint768) {
+         flex: 1 0 60%;
+        }
+        &::placeholder {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          color: #cccccc;
+        }
+      }
+      button {
+        @media (max-width: $breakpoint768) {
+          display: inline-flex;
+        }
+        @media (max-width: $breakpoint768) {
+            flex: 1 0 60%;
+           }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 12px 40px;
+        border-radius: 1000px;
+        background-color: transparent;
+        cursor: pointer;
+        border: 2px solid #ffd703;
+        color: #ffd703;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: uppercase;
+        &:hover {
+          box-shadow: 0 0 10px white;
+        }
+        svg {
+          path {
+            fill: #ffd703;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+.design {
+  padding-top: 240px;
+  padding-bottom: 200px;
+  .design_tittle {
+    h1 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 90px;
+      color: #373737;
+      padding-bottom: 96px;
+      @media (max-width: $breakpoint768) {
+        font-size: 36px;
+        padding-bottom: 20px;
+      }
+      @media (max-width: $breakpoint480) {
+        font-size: 26px;
+        line-height: 35px;
+      }
+    }
+  }
+  .design_items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    img {
+      width: 116px;
+      max-width: 100%;
+      @media (max-width: $breakpoint992) {
+        width: 60px;
+      }
+    }
+    .design_item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex: 0 1 470px;
+      @media (max-width: 1000px) {
+        flex: 0 1 48%;
+      }
+      @media (max-width: 1000px) {
+        flex: 1 1 100%;
+      }
+    }
+    .design_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h3 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 60px;
+        letter-spacing: 0.25px;
+        color: #ffd84e;
+        @media (max-width: $breakpoint480) {
+          font-size: 26px;
+        }
+      }
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        color: #707070;
+      }
+    }
+  }
+
+  .design_product {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 104px;
+    padding-left: 34px;
+    width: 1504px;
+    max-width: 100%;
+    height: 120vh;
+    margin-top: 100px;
+    background: url(../img/productBG.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    .product_box {
+      width: 824px;
+      padding: 32px 64px;
+      background: rgba(255, 255, 255, 0.8);
+      mix-blend-mode: normal;
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-radius: 16px;
+      @media(max-width: $breakpoint992){
+        width: 95%;
+      }
+      @media(max-width: $breakpoint768){
+        padding: 24px 35px;
+      }
+      @media(max-width: $breakpoint480){
+        padding: 16px 26px;
+      }
+      .product_title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 90px;
+        color: #373737;
+        @media(max-width: $breakpoint768){
+          font-size: 36px;
+          line-height: 45px;
+        }
+      }
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #707070;
+      }
+      .product_signup {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 44px;
+
+        .singBTN {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 5px;
+          align-items: center;
+          padding: 12px 40px;
+          background: #ffd703;
+          border-radius: 1000px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          text-transform: uppercase;
+          color: #2c2c2c;
+          &:hover{
+            background-color: #ffd50380;
+          }
+        }
+      }
+
+      .arrow {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        img {
+          width: 14px;
+        }
+      }
+    }
+  }
+}

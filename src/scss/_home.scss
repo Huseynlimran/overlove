@@ -1,0 +1,123 @@
+.home {
+  padding-top: 250px;
+  @media (max-width: $breakpoint992) {
+    padding-top: 150px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $breakpoint768) {
+      flex-wrap: wrap;
+    }
+    .home_left {
+      width: 48%;
+      @media (max-width: 1322px) {
+        flex: 1 0 50%;
+      }
+      @media (max-width: $breakpoint768) {
+        flex: 1 0 100%;
+      }
+      h1 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 95px;
+        line-height: 130%;
+        color: white;
+        @media (max-width: 1322px) {
+          font-size: 76px;
+        }
+        @media (max-width: $breakpoint768) {
+            font-size: 36px;
+          }
+      }
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: white;
+        margin: 24px 0 74px 0;
+        @media (max-width: 1322px) {
+          font-size: 16px;
+        }
+        @media (max-width: $breakpoint768) {
+            width: 100%;
+          }
+      }
+      a {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 16px 72px;
+        background: #ffd703;
+        border-radius: 50px;
+        display: inline-flex;
+        color: black;
+        @media (max-width: 1322px) {
+          font-size: 16px;
+        }
+        @media (max-width: $breakpoint768) {
+            width: 98%;
+            justify-content: center;
+          }
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.336);
+          color: white;
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.521);
+          svg {
+            fill: white;
+            path {
+              fill: white;
+            }
+          }
+        }
+      }
+    }
+
+    .home_right {
+      @media (max-width: 1322px) {
+        flex: 0 1 50%;
+      }
+      @media (max-width: $breakpoint768) {
+        flex: 1 0 98%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      @media(max-width: $breakpoint480){
+          margin-top: 10px;
+    }
+      svg {
+        @media (max-width: 1322px) {
+          width: 100%;
+        }
+        @media (max-width: $breakpoint768) {
+            width: 85%;
+          }
+
+        &:hover {
+          circle {
+            opacity: 1;
+          }
+          path {
+            cursor: pointer;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
